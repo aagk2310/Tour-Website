@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 1.7rem;
+  /* padding-right: 1.7rem; */
+  line-height: 2rem;
+  color: #777;
+  font-family: "Lato", sans-serif;
+  background-color: #f7f7f7;
+  height: 100vh;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #777;
+  height: 3rem;
+  width: 12rem;
+  padding-top: 0.5rem;
+  border-radius: 1.5rem;
+  background-color: white;
+}
+btn:hover {
+  background-color: orange;
+}
