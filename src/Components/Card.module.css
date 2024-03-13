@@ -1,12 +1,14 @@
 .cardHeader {
   position: relative;
+  overflow: hidden;
 }
 
 .cardPicture {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 98%);
   clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 98%);
-  height: 22rem;
+  /* height: 22rem; */
+  height: 60vh;
 }
 .cardPictureOverlay {
   position: absolute;
@@ -44,7 +46,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: "10vw";
+  width: 100%;
 }
 .cardPictureImg {
   -o-object-fit: cover;

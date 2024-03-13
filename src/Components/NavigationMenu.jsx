@@ -32,12 +32,14 @@ function NavigationMenu({ state, setState }) {
             </ListItem>
           </Link>
           <Divider />
-          <ListItem>
-            <ListItemText
-              primary="Sign Up"
-              className={style.listItem}
-            ></ListItemText>
-          </ListItem>
+          <Link to={"/signup"}>
+            <ListItem>
+              <ListItemText
+                primary="Sign Up"
+                className={style.listItem}
+              ></ListItemText>
+            </ListItem>
+          </Link>
         </List>
       </div>
     </>

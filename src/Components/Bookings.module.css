@@ -1,18 +1,39 @@
 .container {
-  border: 1px solid #f3f4f6;
-  border-radius: 7px;
   display: flex;
-  height: 20vh;
+  border: 1px solid #f3f4f6;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.059);
+
   width: 60vw;
+  height: 20vh;
   overflow: hidden;
+  color: inherit;
+}
+.subContainer {
+  display: flex;
+  width: 50%;
+  column-gap: 2vh;
+  overflow: hidden;
+  color: inherit;
 }
 
-.subContainer {
+.tourContainer {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: inherit;
 }
 .imgTour {
+  width: 45%;
   object-fit: cover;
+}
+.bookingContainer {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  padding: 1%;
+  color: inherit;
 }

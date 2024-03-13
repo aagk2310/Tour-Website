@@ -15,3 +15,10 @@
   font-size: 1rem;
   text-align: center;
 }
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3%;
+  letter-spacing: 0.5rem;
+}

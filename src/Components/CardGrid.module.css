@@ -1,9 +1,11 @@
 .cardContainer {
-  max-width: 120rem;
+  width: 90%;
+  height: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3rem;
-  padding-left: 5%;
-  padding-right: 5%;
+  grid-gap: 3%;
+  justify-items: center;
+  padding-bottom: 2%;
+  padding-top: 0%;
 }

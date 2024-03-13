@@ -6,6 +6,8 @@ import NavButton from "../Components/NavButton";
 import style from "./HomePage.module.css";
 import NavigationMenu from "../Components/NavigationMenu";
 
+
+
 function HomePage() {
   const [navState, setNavState] = useState(false);
   return (
@@ -21,7 +23,8 @@ function HomePage() {
           Check our tours
         </Button>
       </Hero>
-      <div style={{ marginTop: "10%" }} />
+      <div style={{ marginTop: "5%" }} />
+      <div className={style.heading}>OUR TOURS</div>
       <CardGrid />
 
       {navState ? (
