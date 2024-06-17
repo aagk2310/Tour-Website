@@ -30,8 +30,8 @@ function Login() {
     }
   }, [isSuccess, isPending, show, error]);
   function onSubmit(data) {
-    console.log("Inside onsubmit");
-    console.log(data);
+    // console.log("Inside onsubmit");
+    // console.log(data);
     mutate(data);
     setShow(true);
   }
@@ -44,7 +44,7 @@ function Login() {
           navigate(-1);
         }}
       />
-      <main className={style.main}>
+      <div className={style.main}>
         <div className={style.loginForm}>
           <h2 className={style.headingSecondary}>Log into your account</h2>
           <form
@@ -83,7 +83,7 @@ function Login() {
             </div>
           </form>
         </div>
-      </main>
+      </div>
       {!isPending && showAlert ? (
         <AlertMessage status={showAlert} setShow={() => setShowAlert(null)} />
       ) : (

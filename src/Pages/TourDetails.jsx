@@ -54,7 +54,13 @@ function TourDetails() {
               justifyContent: "center",
             }}
           >
-            <HeadingTertiary text={data[0].tour_type} isDetails={true} />
+            <HeadingTertiary
+              text={data[0].tour_type}
+              width="30%"
+              height="15%"
+              fontSize="3rem"
+              fontWeight="300"
+            />
           </div>
         </Hero>
         <div>{data[0].long_desc}</div>

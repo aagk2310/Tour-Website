@@ -10,7 +10,23 @@ function CardHeader({ imgName, place }) {
           {/* <div className={style.cardPictureOverlay}>&nbsp;</div> */}
           <img src={imgName} alt="" className={style.cardPictureImg} />
         </div>
-        <HeadingTertiary text={place} />
+        <div
+          style={{
+            position: "absolute",
+            right: "3%",
+            bottom: "6%",
+            width: "50%",
+            height: "15%",
+          }}
+        >
+          <HeadingTertiary
+            text={place}
+            width="100%"
+            height="100%"
+            fontSize="1.5rem"
+            fontWeight="300"
+          />
+        </div>
       </div>
     </>
   );
@@ -24,7 +40,7 @@ function Card({ place, imageName, tagline, id }) {
   const navigate = useNavigate();
 
   const handleExploreClick = () => {
-    console.log("Button clicked!");
+    // console.log("Button clicked!");
     navigate(`/tours/${id}`);
   };
   return (

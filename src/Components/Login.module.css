@@ -10,14 +10,17 @@
 }
 
 .loginForm {
-  width: 35vw;
-  height: 60vh;
+  width: 55%;
+  height: 90%;
   background-color: #fff;
   /* display: flex;
   align-items: center; */
   /* justify-content: center; */
   padding: 1.5rem 2.5rem;
   border-radius: 5px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 
   /* display: flex;
   flex-direction: column;

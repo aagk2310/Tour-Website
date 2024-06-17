@@ -3,6 +3,17 @@ import style from "./NavigationMenu.module.css";
 import LoginSharpIcon from "@mui/icons-material/LoginSharp";
 import HomeIcon from "@mui/icons-material/Home";
 import { Link } from "react-router-dom";
+function ListItemElement({ text, children }) {
+  return (
+    <>
+      <Divider />
+      <ListItem>
+        {children}
+        <ListItemText primary={text} className={style.listItem}></ListItemText>
+      </ListItem>
+    </>
+  );
+}
 function NavigationMenu({ state, setState }) {
   return (
     <>
@@ -14,31 +25,15 @@ function NavigationMenu({ state, setState }) {
       ></div>
       <div className={style.modalCard}>
         <List>
-          <ListItem>
-            <HomeIcon />
-            <ListItemText
-              primary="See Tours"
-              className={style.listItem}
-            ></ListItemText>
-          </ListItem>
-          <Divider />
           <Link to={"/login"}>
-            <ListItem>
+            <ListItemElement text={"Log In"}>
               <LoginSharpIcon />
-              <ListItemText
-                primary="Log In"
-                className={style.listItem}
-              ></ListItemText>
-            </ListItem>
+            </ListItemElement>
           </Link>
-          <Divider />
           <Link to={"/signup"}>
-            <ListItem>
-              <ListItemText
-                primary="Sign Up"
-                className={style.listItem}
-              ></ListItemText>
-            </ListItem>
+            <ListItemElement text={"Sign UP"}>
+              <LoginSharpIcon />
+            </ListItemElement>
           </Link>
         </List>
       </div>

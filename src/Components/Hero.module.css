@@ -1,5 +1,5 @@
 .hero {
-  height: 90vh;
+  height: 31rem;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   display: flex;
@@ -7,4 +7,18 @@
   justify-content: center;
   flex-direction: column;
   gap: 2.5rem;
+  margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero {
+    height: 42rem;
+    gap: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 50rem;
+  }
 }

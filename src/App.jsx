@@ -9,25 +9,28 @@ import TourDetails from "./Pages/TourDetails";
 import DashBoard from "./Pages/DashBoard";
 import SignUp from "./Components/SignUp";
 import BookingsPage from "./Pages/BookingsPage";
+import Footer from "./Components/Footer";
 
 const queryClient = new QueryClient();
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/tours/:id" element={<TourDetails />} />
-          <Route path="/signup" element={<SignUp />} />
+    <>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/tours/:id" element={<TourDetails />} />
+            <Route path="/signup" element={<SignUp />} />
 
-          <Route path="/dashboard" element={<DashBoard />}>
-            <Route path="bookings" element={<BookingsPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-      <ReactQueryDevtools initialIsOpen={false} />
-    </QueryClientProvider>
+            <Route path="/dashboard" element={<DashBoard />}>
+              <Route path="bookings" element={<BookingsPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+        <ReactQueryDevtools initialIsOpen={false} />
+      </QueryClientProvider>
+    </>
   );
 }
 

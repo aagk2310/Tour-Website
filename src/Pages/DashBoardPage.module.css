@@ -1,5 +1,5 @@
 .dashcard {
-  width: 90%;
   display: flex;
   justify-items: center;
+  padding: 2%;
 }

@@ -1,13 +1,13 @@
 .nav_button,
 .nav_button_back {
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 3.4rem;
+  height: 3.4rem;
   background-color: white;
   border-radius: 50%;
   position: fixed;
   z-index: 3;
-  margin-top: 2rem;
-  margin-left: 0.2rem;
+  top: 2rem;
+  right: 0.6rem;
   display: flex;
   align-items: center;
   justify-content: center;

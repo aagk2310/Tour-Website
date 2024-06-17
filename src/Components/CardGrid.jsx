@@ -2,7 +2,6 @@ import Card from "./Card";
 import style from "./CardGrid.module.css";
 import supabase from "../services/supabase";
 import { useQuery } from "@tanstack/react-query";
-import { Box, CircularProgress } from "@mui/material";
 import CircularSpinner from "./CircularSpinner";
 // const places = [
 //   "Taj Mahal",
